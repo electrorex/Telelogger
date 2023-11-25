@@ -1,3 +1,9 @@
+/*This script will send data to THingSpeak using the Telelogger's WiFi modem
+ * This cript goes with the Electrorex tutorial:
+ * "Using the Telelogger (Episode 3): Sending data with WiFi" 
+ * 
+ */
+
 #include <SPI.h>
 #include <WiFi101.h>
 #include <driver/source/nmasic.h>
@@ -35,15 +41,15 @@ void readBat() {
 }
 
 WiFiClient client;
-char ssid[] = "Sawadii5";        //network SSID (name)
-char pass[] = "SongkhlaSidRex";    // network password 
+char ssid[] = "XXX";        //network SSID (name)
+char pass[] = "XXX";    // network password 
 
 int status = WL_IDLE_STATUS; 
 
 //Create C-Stings (character arrays) to hold necessary items for communication
 char server[] = "api.thingspeak.com";             //server address we will connect to at ThingSpeak
 char ThingString[500];                            //character array to hold the url and data... this is the GET url
-char ThingAPIKey[] = "5NDNFNDEV1B573WB";          //String to hold the api key we get from ThingSpeak. Change to your key, gotten from the channel settings page
+char ThingAPIKey[] = "XXXXXXXXXXXXXXXX";          //String to hold the api key we get from ThingSpeak. Change to your key, gotten from the channel settings page
 
 //Make a function to put the data into a character array containing the GET url
 //The GET url contains the address to send the data, the key and the data that goes into each field in the channel
