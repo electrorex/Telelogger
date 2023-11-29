@@ -34,8 +34,8 @@ WiFiClient client;
 char ssid[] = "XXXXXXXXXXX";                                                                        //network SSID (name)
 char pass[] = "XXXXXXXXXXX";                                                                        // network password 
 char server[] = "industrial.api.ubidots.com";                                                       //Ubidots server. Always check to make sure this has not changed
-char UbiToken[] = "BBUS-8owHlSXlTWzuuqLbm50pcz9Zedi0eV";                                                                  //Get a token from the device page after creating a device in your profile at Ubidots
-char UbiDeviceName[] = "telelogger2";                                                                //This is the name you give your device at Ubidots when you create a new device.
+char UbiToken[] = "xxxxxxxxxxxxx";                                                                  //Get a token from the device page after creating a device in your profile at Ubidots
+char UbiDeviceName[] = "xxxxxxxxxx";                                                                //This is the name you give your device at Ubidots when you create a new device.
 
 int status = WL_IDLE_STATUS; 
 char UbiString[500];                                                                                //character array to hold the POST data
