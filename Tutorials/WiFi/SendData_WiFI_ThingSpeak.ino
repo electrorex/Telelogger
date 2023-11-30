@@ -49,7 +49,7 @@ int status = WL_IDLE_STATUS;
 //Create C-Stings (character arrays) to hold necessary items for communication
 char server[] = "api.thingspeak.com";             //server address we will connect to at ThingSpeak
 char ThingString[500];                            //character array to hold the url and data... this is the GET url
-char ThingAPIKey[] = "KRAF9GAODUN6D8CQ";          //String to hold the api key we get from ThingSpeak. Change to your key, gotten from the channel settings page
+char ThingAPIKey[] = "XXXXXXXXXXXXXXXX";          //String to hold the api key we get from ThingSpeak. Change to your key, gotten from the channel settings page
 
 //Make a function to put the data into a character array containing the GET url
 //The GET url contains the address to send the data, the key and the data that goes into each field in the channel
