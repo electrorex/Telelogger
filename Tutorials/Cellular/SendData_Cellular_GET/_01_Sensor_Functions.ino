@@ -5,7 +5,7 @@ float AirTemp;
 float Humidity;
 float BaroPressure;
 float WindSpeed;
-int WindDirection;                        //this is an int so field 5 is formatted as %d
+int WindDirection;                        
 float DewPoint;
 float WindChill;
 
