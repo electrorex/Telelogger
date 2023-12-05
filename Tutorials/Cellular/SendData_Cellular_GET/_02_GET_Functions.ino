@@ -2,12 +2,12 @@
 void MakePayload(){
   sprintf(Payload, "%s=%s&field1=%.2f&field2=%.2f&field3=%.2f&field4=%.2f&field5=%d&field6=%.2f&field7=%.2f&field8=%.2f",
           Endpoint,
-          Token,                            //This is a String so we use %s
-          AirTemp,                                //this is a float so field one is formatted with %.2f for two decimals. If you need more significant figures then use %.3f or &.4f... etc
+          Token,                                  //This is a String so we use %s
+          AirTemp,                                //this is a float so field1 is formatted with %.2f for two decimals. If you need more significant figures then use %.3f or &.4f... etc
           Humidity,
           BaroPressure,
           WindSpeed,
-          WindDirection,                          //this is an int so field 5 is formatted as %d
+          WindDirection,                          //this is an int so field5 is formatted as %d
           DewPoint,
           WindChill,
           Batv
