@@ -43,6 +43,7 @@ void setup() {
 }
 
 void loop() {
+  Serial.println("*********************Starting Data Transmission**********************************************");
   mcp.digitalWrite(8,HIGH); //Turn on LED2
   Serial.println("Starting a data transmission");
   Serial.println("Reading sensors");
@@ -55,7 +56,8 @@ void loop() {
   GetData();
   mcp.digitalWrite(10,LOW); //Turn off LED4
   mcp.digitalWrite(8,LOW); //TUrn off LED2
-  Serial.println("Finished data transmission");
-  Serial.println("*****************************************************************************");
+  Serial.println("Finished data transmission")
   delay(5000);
+  Serial.println("*********************Finished Data Transmission**********************************************");
+  Serial.println("");
 }
