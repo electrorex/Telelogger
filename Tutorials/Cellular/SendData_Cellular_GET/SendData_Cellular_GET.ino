@@ -8,7 +8,7 @@
 Adafruit_MCP23X17 mcp;
 
 //String variables to post data that need to be changed
-char Token[] = "KRAF9GAODUN6D8CQ";                                                                  
+char Token[] = "XXXXXXXXXXXX";                                                                  
 char GetCommand[100]; 
 char Payload[2000]; //Make this large enough to hold expected data plus the endpoint
 char Endpoint[] = "https://api.thingspeak.com/update.json?api_key";
