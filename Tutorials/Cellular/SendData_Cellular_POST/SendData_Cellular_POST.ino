@@ -10,8 +10,8 @@ Adafruit_MCP23X17 mcp;
 //String variables to post data that need to be changed
 char url[] = "https://industrial.api.ubidots.com";
 char Host[] = "industrial.api.ubidots.com:443";
-char Token[] = "X-Auth-Token: BBUS-8owHlSXlTWzuuqLbm50pcz9Zedi0eV";                                                                  
-char Destination[] = "/api/v1.6/devices/telelogger2";
+char Token[] = "X-Auth-Token: XXXXXXXXXXXXXXXXXX";                                                                  
+char Destination[] = "/api/v1.6/devices/XXXXXXXXXX";
 char ContentLength[30]; 
 char UserAgent[] = "Telelogger/1.0";    
 char ContentType[] = "application/json"; 
