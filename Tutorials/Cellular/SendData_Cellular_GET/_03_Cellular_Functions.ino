@@ -210,7 +210,7 @@ void SetupCell(){
  delay(1000);
  sendAT("AT+CTZU?", "\r\nOK", "\r\nERROR", 1000);
  delay(1000);
- sendAT("AT+QICSGP=1,1,\"hologram\",\"\",\"\",1", "\r\nOK", "\r\nERROR", 5000); 
+ sendAT("AT+QICSGP=1,1,\"soracom.io\",\"\",\"\",1", "\r\nOK", "\r\nERROR", 5000); 
  delay(1000);
  WaitReg();
  delay(1000);
