@@ -2,12 +2,12 @@
 void MakePayload(){
   sprintf(Payload, "%s=%s&field1=%.2f&field2=%.2f&field3=%.2f&field4=%.2f&field5=%d&field6=%.2f&field7=%.2f&field8=%.2f",
           Endpoint,
-          Token,                                  //This is a String so we use %s
-          AirTemp,                                //this is a float so field1 is formatted with %.2f for two decimals. If you need more significant figures then use %.3f or &.4f... etc
+          Token,                            //This is a String so we use %s
+          AirTemp,                                //this is a float so field one is formatted with %.2f for two decimals. If you need more significant figures then use %.3f or &.4f... etc
           Humidity,
           BaroPressure,
           WindSpeed,
-          WindDirection,                          //this is an int so field5 is formatted as %d
+          WindDirection,                          //this is an int so field 5 is formatted as %d
           DewPoint,
           WindChill,
           Batv
@@ -24,7 +24,7 @@ void GetData(){
   MakePayload();
   getCommand();
   sendAT("AT+CFUN=1,1", "\r\nAPP RDY", "\r\nERROR", 10000);
-  delay(1000);
+  delay(5000);
   sendAT("AT+QHTTPCFG=\"contextid\",1", "\r\nOK", "\r\nERROR", 5000); 
   delay(1000);
   sendAT("AT+QHTTPCFG=\"responseheader\",1", "\r\nOK", "\r\nERROR", 5000);
@@ -35,7 +35,7 @@ void GetData(){
   delay(1000);
   sendAT("AT+QIACT?", "\r\nOK", "\r\nERROR", 6000); //Setup GPRS communication
   delay(1000);
-  sendAT("AT+QICSGP=1,1,\"hologram\",\"\",\"\",1", "\r\nOK", "\r\nERROR", 5000); 
+  sendAT("AT+QICSGP=1,1,\"soracom.io\",\"\",\"\",1", "\r\nOK", "\r\nERROR", 5000); 
   delay(1000);
   sendAT("AT+QIACT=1", "\r\nOK", "\r\nERROR", 10000);
   delay(1000);
@@ -45,17 +45,14 @@ void GetData(){
   WaitReg();
   
   sendAT(SendCommand, "\r\nCONNECT", "\r\nERROR", 8000);
-  SerialAT.print(Payload);
-  Serial.println(Payload);
-  delay(1000);
-  sendAT("","\r\nOK","\r\nERROR", 30000);
+  //SerialAT.print(Payload);
+  //Serial.println(Payload);
+  delay(5000);
+  sendAT(Payload,"\r\nOK","\r\nERROR", 30000);
   delay(1000);
   sendAT("AT+QHTTPGET=80", "\r\n+QHTTPGET", "\r\nERROR", 30000);
-  sendAT("", "\r\nOK", "\r\nERROR", 5000);
-  delay(6000);
-  sendAT("AT", "\r\nOK", "\r\nERROR", 1000);
   delay(1000);
-  sendAT("AT+QHTTPREAD=60", "+QHTTPREAD: 0", "\r\nERROR", 10000);
+  sendAT("AT+QHTTPREAD=80", "+QHTTPREAD: 0", "\r\nERROR", 10000);
   delay(1000);
   sendAT("AT+QIDEACT=1", "\r\nOK", "\r\nERROR", 2000);
   delay(1000);
