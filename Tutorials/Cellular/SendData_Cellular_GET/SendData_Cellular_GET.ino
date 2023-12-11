@@ -8,7 +8,7 @@
 Adafruit_MCP23X17 mcp;
 
 //String variables to post data that need to be changed
-char Token[] = "XXXXXXXXXXXX";                                                                  
+char Token[] = "KRAF9GAODUN6D8CQ";                                                                  
 char GetCommand[100]; 
 char Payload[2000]; //Make this large enough to hold expected data plus the endpoint
 char Endpoint[] = "https://api.thingspeak.com/update.json?api_key";
@@ -43,7 +43,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println("*********************Starting Data Transmission**********************************************");
   mcp.digitalWrite(8,HIGH); //Turn on LED2
   Serial.println("Starting a data transmission");
   Serial.println("Reading sensors");
@@ -56,8 +55,7 @@ void loop() {
   GetData();
   mcp.digitalWrite(10,LOW); //Turn off LED4
   mcp.digitalWrite(8,LOW); //TUrn off LED2
-  Serial.println("Finished data transmission")
+  Serial.println("Finished data transmission");
+  Serial.println("*****************************************************************************");
   delay(5000);
-  Serial.println("*********************Finished Data Transmission**********************************************");
-  Serial.println("");
 }
