@@ -47,13 +47,10 @@ void setup() {
   mcp.pinMode(4,OUTPUT);
   mcp.digitalWrite(4,HIGH); 
   delay(1000);
-  
-  
   mcp.pinMode(14,OUTPUT);
   mcp.digitalWrite(14,LOW); 
   delay(1000);
   mcp.digitalWrite(14,HIGH);
-
   delay(100);
   setupLoRa();
   delay(100);
