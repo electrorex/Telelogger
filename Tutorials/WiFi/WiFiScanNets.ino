@@ -117,7 +117,6 @@ void setup() {
     while (true);
   }
   printWiFiMac();
-  Serial.print("Battery Voltage = "); Serial.println(Batv);
 }
 
 void loop() {
