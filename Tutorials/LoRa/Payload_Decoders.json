@@ -1,4 +1,4 @@
-unction Decoder(payload, port) {
+function Decoder(payload, port) {
     if(port === 1) {
         return [
             {
