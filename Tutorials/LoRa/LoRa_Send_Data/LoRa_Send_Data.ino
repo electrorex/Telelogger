@@ -14,9 +14,9 @@ See tutorials in the Electrorex learning center at electrorex.io
 //Change interval as necessary in minutes
 int Interval = 5;
 
-char DEVEUI[] = "AT+DEVEUI=AC1F09FFFE0C5D79";
-char APPEUI[] = "AT+APPEUI=AC1F09FFF9151720";
-char APPKEY[] = "AT+APPKEY=AC1F09FFFE0C5D79AC1F09FFF9151720";
+char DEVEUI[] = "AT+DEVEUI=XXXXXXXXXXXXXXXX";
+char APPEUI[] = "AT+APPEUI=XXXXXXXXXXXXXXXX";
+char APPKEY[] = "AT+APPKEY=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 
 //We only have one DS18B20 sensor in this tutorial, but we can replicate it a few times
 #define NSENSORS 3 //Number of DS18B temperature sensors to measure
