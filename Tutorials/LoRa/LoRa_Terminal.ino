@@ -1,3 +1,12 @@
+/*This sketch was written for the Electrorex Telelogger Tutorial 5
+This sketch will setup a terminal in the serial monitor window to allow sending AT commands
+to the Telelogger LoRa modem.
+
+-T. Rex Miller, Jan. 20, 2024
+ */
+
+
+
 #include "wiring_private.h" 
 #include "Adafruit_MCP23X17.h"
 
