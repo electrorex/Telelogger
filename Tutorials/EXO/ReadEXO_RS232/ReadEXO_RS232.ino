@@ -1,7 +1,8 @@
 /*This sketch was written for the Electrorex Telogger Tutorial 8
 Please see tutorial 8 electrorex.io for how to use this sketch.
 -Todd R. Miller, February 5, 2024
- 
+*/
+
 This sketch will read an EXO2 sonde through the YSI DCP adaptor on the Telelogger's RS232 serial port, TX2/RX2.
 
 Wiring from YSI DCP Adaptor to the Telelogger
