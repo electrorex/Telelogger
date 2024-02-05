@@ -1,20 +1,21 @@
-/* This is a modification of the original DS18x20 example script in the OneWire library to make
- *  it work with the Telelogger. This script will scan for DS18B20 devices on the digital port
- *  indicated and read temeprature data from those devices and then print results to the serial
- *  monitor.
- *  
- *  The DS18B20 device should be connected to the Telelogger on screw terminal CN4.
- *  With the flat side of the sensor pointing up and sensor held down, the order of pin outs is:
- *  Power, Signal, Gound. This matches the order of the pins needed for the device on the CN4 screw 
- *  terminal, which is 3VS, D6, GND.
- *  
- *  The sensor then should be wired in the following way:
- *  Signal -> D6
- *  VCC -> 3VS
- *  GND -> GND
- *  
- *  Add a 4.7K resistor from 3VS to D6
- *  
+/*This sketch was written for the Electrorex Telelogger Tutorial 2 
+This is a modification of the original DS18x20 example script in the OneWire library to make
+it work with the Telelogger. This script will scan for DS18B20 devices on the digital port
+indicated and read temeprature data from those devices and then print results to the serial
+monitor.
+  
+The DS18B20 device should be connected to the Telelogger on screw terminal CN4.
+With the flat side of the sensor pointing up and sensor held down, the order of pin outs is:
+Power, Signal, Gound. This matches the order of the pins needed for the device on the CN4 screw 
+terminal, which is 3VS, D6, GND.
+  
+The sensor then should be wired in the following way:
+Signal -> D6
+VCC -> 3VS
+GND -> GND
+  
+Add a 4.7K resistor from 3VS to D6
+  
 */
 
 #include <OneWire.h>
