@@ -1,8 +1,10 @@
-/*This script will send data to Thinger.io using the Telelogger's WiFi modem
- * This script goes with the Electrorex tutorial:
- * "Using the Telelogger (Episode 3): Sending data with WiFi" 
- * The script uses the HTTP POST method to send data to the Thinger HTTP API
+/*This sketch was written for the Electrorex Telelogger Tutorial 3
+It will send data to Thinger.io using the Telelogger's WiFi modem.
+Follow the tutorial instructions to modify.
+
+-T. Rex Miller, Jan. 20, 2024
  */
+
 #include <SPI.h>
 #include <WiFi101.h>
 #include <driver/source/nmasic.h>
