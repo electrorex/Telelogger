@@ -1,6 +1,6 @@
-/*This script is a modification of the WiFiScanNets example script from the WiFi101 library
- * It has been modified to work with the ElectroRex Telelogger. 
- * -Todd R. Miller, November 25, 2023
+/*This sketch was written for the Electrorex Telelogger Tutorial 3
+This is a modification of the WiFi101 scan nets example sketch to make it work with the Telelogger
+-T. Rex Miller, Jan. 20, 2024
  */
 
 //libraries to include
