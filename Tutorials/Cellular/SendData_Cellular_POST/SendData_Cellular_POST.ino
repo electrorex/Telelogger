@@ -1,6 +1,8 @@
-/*This script is a template for sending data to an internet data base using the Telelogger board and
- * the Airgain Quectel BG96 modem using HTTP Post commands.
- *Todd Miller December 4, 2023
+/*This sketch was written for the Electrorex Tutorial 4
+This script is a template for sending data to an internet data base using the Telelogger board and
+the Airgain Quectel BG96 modem using HTTP Post commands. Ubidots is used as an example here.
+
+-T. Rex Miller, December 4, 2023
 */
 #include "Adafruit_MCP23X17.h"
 #define SerialAT Serial1
