@@ -1,6 +1,8 @@
-/*This sketch will setup the serial monitor to send AT commands to the Telelogger's
- * cellular modem and read the responses
- * Todd R Miller, December 11, 2023
+/*This sketch was written for the Electrorex Telelogger Tutorial 4
+This sketch will setup the serial monitor to allow sending AT commands to the Telelogger's
+cellular modem and read the responses
+
+-Todd R Miller, December 11, 2023
  */
 
 #define SerialAT Serial1
