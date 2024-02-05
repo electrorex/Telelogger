@@ -1,7 +1,7 @@
 /*
-This script goes with the Electrorex tutorials on using the LoRa modem
+This script goes with the Electrorex tutorial 5 on using the LoRa modem
 It measures a DS18B20 temperature sensor and battery voltage,
-then sends the data to ubidots using the LoRa modem and The Things Network
+then sends the data to ubidots using the LoRa modem and The Things Network.
 Free accounts at Ubidots and The Things Network are required.
 See tutorials in the Electrorex learning center at electrorex.io
  */
