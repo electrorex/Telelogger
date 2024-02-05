@@ -1,22 +1,22 @@
-/* This script is a modification of the original example script in the OneWire library written by 
- *  Paul Stoffregen. It has been modified to work with the Telelogger board and shows an example of how
- *  to read multiple DS18B20 devices.
- *  
- *  The DS18B20 device(s) should be connected to the Telelogger on screw terminal CN4.
- *  With the flat side of the sensor pointing up and sensor held down, the order of pin outs is:
- *  Power, Signal, Gound. This matches the order of the pins needed for the device on the CN4 screw 
- *  terminal, which is 3VS, D6, GND.
- *  
- *  The sensor then should be wired in the following way:
- *  Signal -> D6
- *  VCC -> 3VS
- *  GND -> GND
- *  
- *  Add a 4.7K resistor from 3VS to D6
- *  
- *  Although the script is meant to read multiple devices, for demonstration purposes we "pretend" we have
- *  multiple devices and just repeat the same address five times.
- *  
+/* This sketch was written for the Electrorex Telelogger Tutorial 2
+This script is a modification of the original example script in the OneWire library written by 
+Paul Stoffregen. It has been modified to work with the Telelogger board and shows an example of how
+to read multiple DS18B20 devices.
+  
+The DS18B20 device(s) should be connected to the Telelogger on screw terminal CN4.
+With the flat side of the sensor pointing up and sensor held down, the order of pin outs is:
+Power, Signal, Gound. This matches the order of the pins needed for the device on the CN4 screw 
+terminal, which is 3VS, D6, GND.
+  
+The sensor then should be wired in the following way:
+Signal -> D6
+VCC -> 3VS
+GND -> GND
+Add a 4.7K resistor from 3VS to D6
+  
+Although the script is meant to read multiple devices, for demonstration purposes we "pretend" we have
+multiple devices and just repeat the same address five times.
+  
 */
 
 #include <OneWire.h>
