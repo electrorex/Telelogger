@@ -1,6 +1,8 @@
-/*This script is a template for sending data to an internet data base using the Telelogger board and
- * the Airgain Quectel BG96 modem using HTTP Post commands.
- *Todd Miller December 4, 2023
+/*This sketch was written for the Electrorex Telelogger Tutorial 4
+This script is a template for sending data to an internet data base using the Telelogger board and
+the Airgain Quectel BG96 modem using HTTP Post commands.
+
+-T. Rex Miller, December 4, 2023
 */
 #include "Adafruit_MCP23X17.h"
 #define SerialAT Serial1
@@ -8,7 +10,7 @@
 Adafruit_MCP23X17 mcp;
 
 //String variables to post data that need to be changed
-char Token[] = "KRAF9GAODUN6D8CQ";                                                                  
+char Token[] = "XXXXXXXXXXXXXX";                                                                  
 char GetCommand[100]; 
 char Payload[2000]; //Make this large enough to hold expected data plus the endpoint
 char Endpoint[] = "https://api.thingspeak.com/update.json?api_key";
