@@ -1,13 +1,6 @@
-
-/*
- * This example check if the firmware loaded on the WiFi101
- * shield is updated.
- *
- * Circuit:
- * - WiFi101 Shield attached
- *
- * Created 29 July 2015 by Cristian Maglie
- * This code is in the public domain.
+/*This sketch was written for the Electrorex Telelogger Tutorial 3
+This is a modification of the WiFi101 check firmware sketch to make it work with the Telelogger
+-T. Rex Miller, Jan. 20, 2024
  */
  
 #include <SPI.h>
