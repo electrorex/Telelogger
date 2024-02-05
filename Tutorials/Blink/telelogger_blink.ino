@@ -1,7 +1,8 @@
-/*Telelogger_Blink Script. Using the Telelogger (Episode 1): Getting started
- * This script demonstrates how to flash or blink the indicator LEDs on the Telelogger board
- * T. Rex Miller, November 18, 2023
- */
+/*This sketch was written for the Electrorex Telogger tutorial 1
+-T. Rex Miller, November 18, 2023
+
+This script demonstrates how to flash or blink the indicator LEDs on the Telelogger board
+*/
 
 //Below, we include this Adafruit library to use the GPIO expander on the Telelogger. 
 //Pins 8,9 and 10 on the MCP are used to turn LEDs 2, 3 and 4 on and off, respectively.
