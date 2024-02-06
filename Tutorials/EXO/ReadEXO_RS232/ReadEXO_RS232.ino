@@ -1,8 +1,6 @@
-/*This sketch was written for the Electrorex Telogger Tutorial 8
-Please see tutorial 8 electrorex.io for how to use this sketch.
+/*This sketch was written for the Electrorex Telogger tutorials
 -Todd R. Miller, February 5, 2024
-
-
+ 
 This sketch will read an EXO2 sonde through the YSI DCP adaptor on the Telelogger's RS232 serial port, TX2/RX2.
 
 Wiring from YSI DCP Adaptor to the Telelogger
@@ -37,6 +35,8 @@ Each time the EXO is turned on, the wiper will be activated and the sketch waits
 //Libraries needed
 #include "wiring_private.h" 
 #include "Adafruit_MCP23X17.h"
+
+Adafruit_MCP23X17 mcp;
 
 //Make a new serial port, Serial2, on digital pins 10 and 12
 //Pin 10 and 12 are RX and TX for UART multiplexer communications
